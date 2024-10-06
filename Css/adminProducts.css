@@ -1,0 +1,194 @@
+
+
+:root{
+    --blue: #3498db;
+    --red: #e74c3c;
+    --orange:#f39c12;
+    --black:#333;
+    --white:#fff;
+    --light-bg:#eee;
+    --box-shadow:0 5px 10px rgba(0,0,0,.1);
+    --border:2px solid var(--black);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+ }
+
+body{
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    background-color:var(--blue);
+    
+}
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 0%);
+    padding: 1px;
+    margin: 0px;
+    overflow: hidden;
+    
+}
+.navbar .item{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar li{
+    float: left;
+}
+
+.divclass{
+    display: flex;
+    position: center;
+}
+
+.btn,
+.delete-btn,
+.option-btn{
+   display: inline-block;
+   padding:10px 30px;
+   cursor: pointer;
+   font-size: 18px;
+   color:var(--white);
+   border-radius: 5px;
+   text-transform: capitalize;
+}
+
+.btn:hover,
+.delete-btn:hover,
+.option-btn:hover{
+   background-color: var(--black);
+}
+
+.btn{
+   background-color: var(--orange);
+   margin-top: 10px;
+}
+
+.delete-btn{
+   background-color: var(--red);
+}
+
+.option-btn{
+   background-color: var(--orange);
+}
+
+.message{
+    position: sticky;
+    top:0; left:0; right:0;
+    padding:15px 10px;
+    background-color: var(--white);
+    text-align: center;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    color:var(--black);
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+ }
+
+.container{
+   padding:0 20px;
+   margin:0 auto;
+   max-width: 1200px;
+   padding-bottom: 70px;
+   background-color: var(--blue);
+}
+
+.container .heading{
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 40px;
+   text-transform: uppercase;
+   color:var(--black);
+   -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: var(--white);
+}
+
+
+.container .shopping-cart{
+   padding: 20px 0;
+}
+
+.container .shopping-cart table{
+   width: 100%;
+   text-align: center;
+   border:var(--border);
+   border-radius: 5px;
+   box-shadow: var(--box-shadow);
+   background-color: var(--white);
+}
+
+.container .shopping-cart table thead{
+   background-color: var(--black);
+}
+
+.container .shopping-cart table thead th{
+   padding:10px;
+   color:var(--white);
+   text-transform: capitalize;
+   font-size: 20px;
+}
+
+.container .shopping-cart table .table-bottom{
+   background-color: var(--light-bg);
+}
+
+.container .shopping-cart table tr td{
+   padding:10px;
+   font-size: 20px;
+   color:var(--black);
+}
+
+.container .shopping-cart table tr td:nth-child(1){
+   padding:0;
+}
+
+.container .shopping-cart table tr td input[type="number" ]{
+   width: 80px;
+   border:var(--border);
+   padding:12px 14px;
+   font-size: 20px;
+   color:var(--black);
+}
+
+.container .shopping-cart table tr td input[type="text" ]{
+   width: 150px;
+   border:var(--border);
+   padding:12px 14px;
+   font-size: 18px;
+   color:var(--black);
+}
+.container .shopping-cart table tr td input[type="file" ]{
+   width: 100%;
+   border:var(--border);
+   padding:12px 14px;
+   font-size: 18px;
+   color:var(--black);
+}
+
+.container .shopping-cart .cart-btn{
+   margin-top: 10px;
+   text-align: left;
+}
+
+.container .shopping-cart .disabled{
+   pointer-events: none;
+   background-color: var(--red);
+   opacity: .5;
+   user-select: none;
+}
